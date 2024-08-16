@@ -5,7 +5,7 @@
                 <span>管理中心</span>
             </div>
             <div class="aside-body">
-                <el-menu router="true">
+                <el-menu router="true" class="nav-menu">
                     <el-menu-item>
                         <span>首页</span>
                     </el-menu-item>
@@ -49,7 +49,7 @@
 
 </script>
 
-<style>
+<style scoped>
 .container{
     backface-visibility: hidden;
     display: flex;
@@ -61,6 +61,7 @@
 .aside{
     width: 250px;
     background-color: #fff;
+    box-shadow: 0 2px 10px -1px #4e4e4e14;
 }
 
 .aside-top{
@@ -72,4 +73,24 @@
     margin:20px auto;
 }
 
+.aside-body{
+    padding: 16px 8px;
+}
+
+.aside-body::-webkit-scrollbar {
+    width: 4px;
+}
+
+.aside-middle::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #ddd;
+}
+
+.el-menu {
+    border-right: unset !important;
+}
+
+.main-content{
+    width: 100%;
+}
 </style>
